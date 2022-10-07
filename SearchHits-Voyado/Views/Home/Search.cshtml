@@ -1,0 +1,55 @@
+﻿@using System.Globalization
+@model SearchViewModel
+
+<div class="sumamryHits">
+    @if (@Model.SearchQuery is null)
+    {
+        <div>
+            <h3>Cannot provide results for empty space, please make a new search!</h3>
+             
+        </div>
+    }
+    else
+    {
+        <div class="searchString">
+
+            <h2>Your search</h2>
+            <p>@Model.SearchQuery</p>
+        </div>
+
+        <div class="containerHits">
+            <h4>TotalHitsGoogle</h4>
+            @if (Model.TotalHitsGoogle > 1000000)
+            {
+                <p>@Model.TotalHitsGoogle.ToString("#,##0,,M", CultureInfo.InvariantCulture)</p>
+
+            }
+            else
+            {
+
+                <p>@Model.TotalHitsGoogle</p>
+            }
+
+            <h4>TotalHitsYahoo</h4>
+            @if (Model.TotalHitsYahoo > 1000000)
+            {
+                <p>@Model.TotalHitsYahoo.ToString("#,##0,,M", CultureInfo.InvariantCulture)</p>
+
+            }
+            else
+            {
+                <p>@Model.TotalHitsYahoo</p>
+
+            }
+
+        </div>
+
+    }
+
+    <button > <a asp-controller="Home" asp-action="Index">Make a new search</a></button>
+
+
+</div>
+
+
+

@@ -1,0 +1,49 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.searchHolder {
+    display: flex;
+    padding: 10px;
+}
+
+.searchHolder input {
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+    height: 55px;
+    padding: 5px;
+}
+
+.searchHolder input {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.34), -15px -14px 0px rgba(255, 255, 255, 1), 18px -55px 0px rgba(255, 255, 255,1), 33px -6px 0px rgba(255, 255, 255, 1);
+}
+
+.messagepop input {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.34), -15px -14px 0px rgba(255, 255, 255, 1), 18px -55px 0px rgba(255, 255, 255,1), 33px -6px 0px rgba(255, 255, 255, 1);
+}
+ 
+
+
+.searchString {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
