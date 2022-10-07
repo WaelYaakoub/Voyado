@@ -29,7 +29,6 @@ namespace SearchHits_Voyado.API
                     var jsonObject = JObject.Parse(responseRead);
                     //Getting a certain property name from the jsonObject
                     var searchInfo = jsonObject.GetValue("search_information");
-
                     //Binding the searchInfo to my SearchInformation.cs
                     var result = searchInfo.ToObject<T>();
 
