@@ -8,7 +8,8 @@ namespace SearchHits_Voyado.Repositories
         private readonly IApiClient _apiClient;
         private readonly string baseEndPoint = "https://serpapi.com/search.json?engine=";
         //Should be in a secret.
-        private readonly string apiKey = "3856e09ec25e3a359568c71b2aaa5973a74d8b679e240cafc9a1a7245cec09ad";
+        //Paste in the API key down below...
+        private readonly string apiKey = "";
 
 
         public ApiRepository(IApiClient apiClient)

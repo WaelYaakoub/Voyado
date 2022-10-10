@@ -35,7 +35,7 @@ namespace SearchHits_Voyado.Controllers
             try
             {
 
-                //Remove leading and trailing whitespaces
+                //Remove leading and trailing whitespaces then splitting the searchString
                 string[] words = searchString.Trim().Split(" ");
 
                 var searchGoogle = new SearchInformation();
