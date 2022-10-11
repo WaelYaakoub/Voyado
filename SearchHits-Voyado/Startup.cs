@@ -12,7 +12,7 @@ namespace SearchHits_Voyado
 
         public IConfiguration Configuration { get; }
 
-        public async void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpClient();
             services.AddControllersWithViews();
